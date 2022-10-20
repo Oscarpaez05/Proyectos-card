@@ -1,0 +1,52 @@
+
+
+$principal: rgb(64, 129, 69);
+
+$primary: $principal;
+$enable-shadows: true;
+$enable-gradients: true;
+$btn-padding-y: 0.8rem;
+$btn-padding-x: 1.5rem;
+$btn-border-radius: 1rem;
+
+@import "../libs/bootstrap/scss/bootstrap";
+
+.btn-primary {
+    border-bottom: 3px solid rgba(10, 9, 9, 0.9);
+}
+
+.custom-class {
+    display: none;
+}
+
+@include media-breakpoint-up(xs) {
+    .custom-class {
+        display: block;
+     background: url(https://lh5.googleusercontent.com/proxy/hUrVmOGgX8lrH0-SQcB6k-dROwZg3lw2Aon2mb7NevTQ5gXVKn6V9gzOdHq0jBDgN3Qbxr7CXy093ALqNg-r7A_jlcr_f4K-J5GA3_fD4kKODLvKQnyI346Bvr7IyzgAJVP7x0nC=s0-d);
+        height: 300px;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .custom-class {
+        display: block;
+        background: url(https://i.pinimg.com/originals/b6/54/ab/b654ab471022448e6e2ffb87a1c77a8d.jpg);
+        height: 200px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .custom-class {
+        display: block;
+        background-image: url(../img);
+        height: 200px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .custom-class {
+        display: block;
+        background: url(https://data.1freewallpapers.com/download/silhouette-night-starry-sky-girl-anime-1600x900.jpg);
+        height: 200px;
+    }
+}
